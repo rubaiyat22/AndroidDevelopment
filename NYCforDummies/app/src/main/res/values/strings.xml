@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NYC for Dummies</string>
+    <string name="image1">statue of liberty 1</string>
+    <string name="startButton">Enter the App</string>
+    <string name="openMap">Click to Show Direction in Map</string>
+    <string name="currentMarkerBtn">Show Current Location</string>
+    <string name="address">Address:   </string>
+    <string name="aboutButton">About</string>
+    <string name="hours">Open Hours:  </string>
+    <string name="trains">Nearby Trains:</string>
+</resources>

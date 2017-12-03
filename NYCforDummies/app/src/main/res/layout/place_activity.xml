@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:id="@+id/placeRelative"
+                tools:context=".PlaceActivity">
+
+    <ViewFlipper
+        android:id="@+id/slideShow"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textStyle="bold"
+        android:layout_below="@+id/slideShow"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/showAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/loc"
+        android:layout_toEndOf="@+id/loc"/>
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hours"
+        android:textStyle="bold"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/loc"
+        android:layout_alignStart="@+id/loc"/>
+
+    <TextView
+        android:id="@+id/nearbyTrains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trains"
+        android:textStyle="bold"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/infoButton"
+        android:layout_alignStart="@+id/hours"/>
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:onClick="onClickPopupWindow"
+        android:text="@string/aboutButton"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/hours"/>
+
+    <Button
+        android:id="@+id/openMap"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:onClick="onCickToOpenMapApp"
+        android:text="@string/openMap"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/nearbyTrains"/>
+
+    <TextView
+        android:id="@+id/showHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hours"
+        android:layout_toEndOf="@+id/nearbyTrains"
+        />
+
+    <TextView
+        android:id="@+id/showTrains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nearbyTrains"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/nearbyTrains"
+        />
+
+</RelativeLayout>
